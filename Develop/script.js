@@ -12,4 +12,18 @@ m.textContent = moment().format('dddd[,] MMMM Do YYYY,  h:mm:ss a');
  
 
 
+//save function to save to local storage
+var plan = document.getElementById('plan')
+function saveFunction() {
+   
+    
+    console.log("saved!")
+    console.log(plan)
+    
+
+
+
+}
+
+
 console.log("you are connected");
