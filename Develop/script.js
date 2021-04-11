@@ -13,17 +13,21 @@ m.textContent = moment().format('dddd[,] MMMM Do YYYY,  h:mm:ss a');
 
 
 //save function to save to local storage
-var plan = document.getElementById('plan')
-const getPlan = document.querySelector(".plan")
-function saveFunction() {
-   localStorage.setItem("plan", getPlan.value)
-    
-    console.log("saved!")
-    console.log(plan.value)
-    
-
-
-
+//9 AM
+function saveFunction9() {
+    var plan = document.getElementById('9plan');
+    var getPlan = document.querySelector(".plan");
+    localStorage.setItem("9plan", getPlan.value);
+    console.log("saved!");
+    console.log(plan.value);
+}
+//10 AM
+function saveFunction10() {
+    var plan = document.getElementById('10plan');
+    var getPlan = document.querySelector(".plan");
+    localStorage.setItem("10plan", getPlan.value);
+    console.log("saved!");
+    console.log(plan.value);
 }
 
 
