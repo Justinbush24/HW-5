@@ -12,7 +12,8 @@ m.textContent = moment().format('dddd[,] MMMM Do YYYY,  h:mm:ss a');
  
 
 
-//save function to save to local storage
+//save function to save to local storage 
+//also persists data from local storage
 //9 AM
 function saveFunction9() {
     var plan = document.getElementById('plan9');
@@ -21,6 +22,7 @@ function saveFunction9() {
     console.log("saved!");
     console.log(plan.value);
 }
+plan9.value = localStorage.getItem('plan9');
 //10 AM
 function saveFunction10() {
     var plan = document.getElementById('plan10');
@@ -29,6 +31,7 @@ function saveFunction10() {
     console.log("saved!");
     console.log(plan.value);
 }
+plan10.value = localStorage.getItem('plan10');
 //11 AM
 function saveFunction11() {
     var plan = document.getElementById('plan11');
@@ -37,6 +40,7 @@ function saveFunction11() {
     console.log("saved!");
     console.log(plan.value);
 }
+plan11.value = localStorage.getItem('plan11');
 //12 PM
 function saveFunction12() {
     var plan = document.getElementById('plan12');
@@ -45,6 +49,7 @@ function saveFunction12() {
     console.log("saved!");
     console.log(plan.value);
 }
+plan12.value = localStorage.getItem('plan12');
 //1 PM
 function saveFunction1() {
     var plan = document.getElementById('plan1');
@@ -53,6 +58,7 @@ function saveFunction1() {
     console.log("saved!");
     console.log(plan.value);
 }
+plan1.value = localStorage.getItem('plan1');
 //2 PM
 function saveFunction2() {
     var plan = document.getElementById('plan2');
@@ -61,6 +67,7 @@ function saveFunction2() {
     console.log("saved!");
     console.log(plan.value);
 }
+plan2.value = localStorage.getItem('plan2');
 //3 PM
 function saveFunction3() {
     var plan = document.getElementById('plan3');
@@ -69,6 +76,7 @@ function saveFunction3() {
     console.log("saved!");
     console.log(plan.value);
 }
+plan3.value = localStorage.getItem('plan3');
 //4 PM
 function saveFunction4() {
     var plan = document.getElementById('plan4');
@@ -77,6 +85,7 @@ function saveFunction4() {
     console.log("saved!");
     console.log(plan.value);
 }
+plan4.value = localStorage.getItem('plan4');
 //5 PM
 function saveFunction5() {
     var plan = document.getElementById('plan5');
@@ -85,6 +94,11 @@ function saveFunction5() {
     console.log("saved!");
     console.log(plan.value);
 }
+plan5.value = localStorage.getItem('plan5');
+
+
+
+
 
 
 console.log("you are connected");
