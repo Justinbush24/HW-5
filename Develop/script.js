@@ -4,7 +4,12 @@
 var m = document.querySelector("#currentDate");
 m.textContent = moment().format('dddd[,] MMMM Do YYYY');
 
+//clear local storage
 
+function clearDay() {
+    localStorage.clear();
+    location.reload();
+}
 
 
 
