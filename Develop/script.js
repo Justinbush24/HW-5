@@ -2,14 +2,112 @@
 
 // add current date to top of pageS
 var m = document.querySelector("#currentDate");
-m.textContent = moment().format('dddd[,] MMMM Do YYYY,  h:mm:ss a');
+m.textContent = moment().format('dddd[,] MMMM Do YYYY');
 
 
 
 
 
 // color code the past,present,and future times
- 
+var now= new Date().getHours();
+//9AM
+if (now > 9) {
+    $("#plan9").addClass("past");
+	}	
+    else if (now >= 9 && now < 10) {
+        $("#plan9").addClass("present");
+	}
+    else if (now < 9) {
+        $("#plan9").addClass("future");
+}
+
+//10AM
+if (now > 10) {
+    $("#plan10").addClass("past");
+	}	
+    else if (now >= 10 && now < 11) {
+        $("#plan10").addClass("present");
+	}
+    else if (now < 10) {
+        $("#plan10").addClass("future");
+}
+    
+ //11AM
+if (now > 11) {
+    $("#plan11").addClass("past");
+	}	
+    else if (now >= 11 && now < 12) {
+        $("#plan11").addClass("present");
+	}
+    else if (now < 11) {
+        $("#plan11").addClass("future");
+}
+
+ //12PM
+if (now > 12) {
+    $("#plan12").addClass("past");
+	}	
+    else if (now >= 12 && now < 1) {
+        $("#plan12").addClass("present");
+	}
+    else if (now < 12) {
+        $("#plan12").addClass("future");
+}
+    
+//1PM
+if (now > 1) {
+    $("#plan1").addClass("past");
+	}	
+    else if (now >= 1 && now < 2) {
+        $("#plan1").addClass("present");
+	}
+    else if (now < 1) {
+        $("#plan1").addClass("future");
+}
+    
+//2PM
+if (now > 1) {
+    $("#plan2").addClass("past");
+	}	
+    else if (now >= 2 && now < 3) {
+        $("#plan2").addClass("present");
+	}
+    else if (now < 2) {
+        $("#plan2").addClass("future");
+}
+    
+//3PM
+if (now > 3) {
+    $("#plan3").addClass("past");
+	}	
+    else if (now >= 3 && now < 4) {
+        $("#plan3").addClass("present");
+	}
+    else if (now < 3) {
+        $("#plan3").addClass("future");
+}
+    
+//4PM
+if (now > 4) {
+    $("#plan4").addClass("past");
+	}	
+    else if (now >= 4 && now < 5) {
+        $("#plan4").addClass("present");
+	}
+    else if (now < 4) {
+        $("#plan4").addClass("future");
+}
+    
+//5PM
+if (now > 5) {
+    $("#plan5").addClass("past");
+	}	
+    else if (now >= 5 && now < 6) {
+        $("#plan5").addClass("present");
+	}
+    else if (now < 5) {
+        $("#plan5").addClass("future");
+	}
 
 
 //save function to save to local storage 
